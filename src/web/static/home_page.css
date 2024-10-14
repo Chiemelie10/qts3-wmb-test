@@ -1,0 +1,47 @@
+.home-page [role=button],
+.home-page [type=button],
+.home-page [type=reset],
+.home-page [type=submit],
+.home-page button {
+    --pico-background-color: #0044CC;
+    --pico-border-color: #0044CC;
+}
+
+.home-page [role=button]:is(:hover, :active, :focus),
+.home-page [role=button]:is([aria-current]:not([aria-current=false])),
+.home-page [type=button]:is(:hover, :active, :focus),
+.home-page [type=button]:is([aria-current]:not([aria-current=false])),
+.home-page [type=file]::file-selector-button:is(:hover, :active, :focus),
+.home-page [type=file]::file-selector-button:is([aria-current]:not([aria-current=false])),
+.home-page [type=reset]:is(:hover, :active, :focus),
+.home-page [type=reset]:is([aria-current]:not([aria-current=false])),
+.home-page [type=submit]:is(:hover, :active, :focus),
+.home-page [type=submit]:is([aria-current]:not([aria-current=false])),
+.home-page button:is(:hover, :active, :focus),
+.home-page button:is([aria-current]:not([aria-current=false])) {
+    --pico-background-color: #003BB5;
+    --pico-border-color: #003BB5;
+}
+
+.home-page :where(a:not([role=button])),
+.home-page [role=link] {
+    --pico-color: #0044CC;
+    --pico-background-color: transparent;
+    --pico-underline: #0044CC;
+    outline: 0;
+    background-color: var(--pico-background-color);
+    color: var(--pico-color);
+}
+
+.home-page :where(a:not([role=button])):is([aria-current]:not([aria-current=false]),
+.home-page :hover,
+.home-page :active,
+.home-page :focus),
+.home-page [role=link]:is([aria-current]:not([aria-current=false]),
+.home-page :hover,
+.home-page :active,
+.home-page :focus) {
+    --pico-color: #003BB5;
+    --pico-underline: #003BB5;
+    --pico-text-decoration: underline
+}

@@ -2,7 +2,7 @@ FROM python:3.12
 LABEL maintainer="Miguel Galves <mgalves@gmail.com>"
 
 # We need sudo and nginx to run
-RUN apt-get update && apt-get -y install sudo nginx emacs
+RUN apt-get update && apt-get -y install sudo nginx emacs vim
 
 # Creating our local user and group
 RUN groupadd nginx
@@ -24,7 +24,7 @@ RUN mkdir /home/wmb/www
 RUN mkdir /home/wmb/www/src
 
 # Needed for nginx
-RUN chmod o+x /home/wmb &&chmod o+x /home/wmb/www
+RUN chmod o+x /home/wmb && chmod o+x /home/wmb/www
 
 COPY bin/cmd_run.sh /home/wmb/www 
 RUN sudo chown wmb:wmb /home/wmb/www/cmd_run.sh && sudo chmod 777 /home/wmb/www/cmd_run.sh

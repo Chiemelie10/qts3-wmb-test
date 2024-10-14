@@ -11,6 +11,7 @@
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+  {% block home_page_css %}{% endblock %}
   <script src="{% static 'htmx.v2.0.0.min.js' %}"></script>
   <title>QuickStatements 3.0</title>
   <style>
@@ -29,7 +30,7 @@
 
 <body>
   <main class="container">
-    <nav>
+    <nav class="{% if is_qts_home_page %}home-page{% endif %}">
       <ul>
         <li><a href="{% url 'home' %}"><strong>QuickStatements 3.0</strong></a></li>
         <li><a href="{% url 'new_batch' %}">New batch</a></li>

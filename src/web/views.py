@@ -1,8 +1,6 @@
-import os
-
 from datetime import datetime
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
 
@@ -22,7 +20,7 @@ def home(request):
     """
     Main page for this tool
     """
-    return render(request, "index.html")
+    return render(request, "index.html", {"is_qts_home_page": True})
 
 
 @require_http_methods(

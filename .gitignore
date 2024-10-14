@@ -1,3 +1,5 @@
+# Environment variables
+/etc/env
 
 # Static files
 /src/static/
