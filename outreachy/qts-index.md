@@ -12,9 +12,9 @@ The QuickStatements home page is the user interface for the tool, QuickStaments,
    1.4 QuickStatements 3.0
 
 2. The new batch form<br>
-   2.1 Command format<br>
-    -    CSV command format<br>
-    -    V1 command format<br>
+   2.1 Command format
+    - CSV command format
+    - V1 command format
    2.2 Custom bacth name<br>
    2.3 Text area for entering commands<br>
    2.4 Error message
