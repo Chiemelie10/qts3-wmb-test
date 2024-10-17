@@ -5,19 +5,19 @@ The QuickStatements home page is the user interface for the tool, QuickStaments,
 
 ## Table of contents
 
-1.0 The navigation buttons.<br>
-  1.1 Login<br>
-  1.2 Git<br>
-  1.3 New batch<br>
-  1.4 QuickStatements 3.0
+1. The navigation buttons.
+   1.1 Login<br>
+   1.2 Git<br>
+   1.3 New batch<br>
+   1.4 QuickStatements 3.0
 
-2.0 The new batch form<br>
-  2.1 Command format<br>
+2. The new batch form
+   2.1 Command format<br>
     - CSV command format<br>
     - V1 command format<br>
-  2.2 Custom bacth name<br>
-  2.3 Text area for entering commands<br>
-  2.4  Error message
+   2.2 Custom bacth name<br>
+   2.3 Text area for entering commands<br>
+   2.4  Error message
 
 ## 1.0 The navigation buttons
 
