@@ -9,13 +9,19 @@ The QuickStatements home page is the user interface for the tool, QuickStaments,
    1.1 Login<br>
    1.2 Git<br>
    1.3 New batch<br>
-   1.4 QuickStatements 3.0
+   1.4 QuickStatements 3.0<br>
 
-2. The new batch form<br>
-   2.1 Command format<br>    - CSV command format<br>    - V1 command format<br>
-   2.2 Custom bacth name<br>
-   2.3 Text area for entering commands<br>
-   2.4 Error message
+2. The search buttons<br>
+   2.1 Your last batches<br>
+   2.2 Last batches<br>
+   2.3 See batch details<br>
+   2.4 See batches by user<br>
+
+3. The new batch form<br>
+   3.1 Command format<br>    - CSV command format<br>    - V1 command format<br>
+   3.2 Custom bacth name<br>
+   3.3 Text area for entering commands<br>
+   3.4 Error message
 
 ## 1.0 The navigation buttons
 
@@ -36,18 +42,38 @@ The two new batch buttons on the home page have the same functionality as they a
 ### 1.4 QuickStatements 3.0
 Clicking this button redirects the user to home page or reloads the home page if the user is currently on the home page. The purpose is to make it easier for users that are no longer on the home page to return to the page.
 
-## 2.0 The new batch form
+## 2.0 The search buttons
+
+There are 4 search buttons on the Quickstatments home page which returns Wikidata items. These button serve different purposes which will be discussed next.
+
+### 2.1 Your last batches button
+
+The user must be logged in to make use of this button given it is only displayed after the user signs in. When clicked it displays a list of the most recent QuickStatments batches submitted by the user. A batch is a group of commands that are executed together to update or add data to Wikidata.
+
+### 2.2 Last batches
+
+This button is accessible to all users, whether logged in or not. It displays a list of the most recent QuickStatements batches submitted by any user, allowing users to view the kind of statements that have been run by others.
+
+### 2.3 See batch details
+
+This button displays a detailed information about a batch that its id was entered in the input field that is side by side with the button.
+
+### 2.4 See batches by user
+
+This button displays a list of batches submitted by a specific user. It requires that the id of the user should be entered in the input field that is side by side with this button.
+
+## 3.0 The new batch form
 
 The new batch form has three input fields and a execute button for submitting the form. The input fields are:
 - Command format
 - Custom batch name
 - Text area for entering commands
 
-## 2.1 Command format
+### 3.1 Command format
 
 CSV and V1 are the command formats available on the QuickStamets tool. There is no advantage of using one over the other as they are efficient in handling few or bulk Wikidata edits. Each of the command formats has its syntax and structure which must be followed when entering commands in the text area of the form, we will look at the syntax and structure next.
 
-## CSV
+### CSV
 
 In all files with a .csv extension, commas seperate columns while new lines seperate rows, with the first row being the header. The QuickStatements CSV command format is structured that way, with the difference being that there are defined rules, specifically for the tool, that must be followed for the edit to be successful. The accepted values for header labels are:
 
@@ -135,7 +161,7 @@ Adding hyphen sign to any value in the header row deletes that column and remove
 qid,P1234,Len,-Den,S1234,s1234,#
 Q123456,Q5,Label of the item in English,Description in English,Q2345,source used,Comment about the new item being added
 
-## V1
+### V1
 
 Using the V1 command format gives the same end result as the CSV command format but it has its own rules and structure which must be followed to get a successful edit or creation of Wikidata items. We will look at these rules and structures next.
 
@@ -172,14 +198,14 @@ To delete an a property from an item, a hyphen is prepended to the qid of the it
 
 -Q34|P1234|Q7
 
-## 2.2 Custom batch name
+### 3.2 Custom batch name
 
 The custom batch name is the second input field of the form. This field allows the user to name the bacth of commands that will be execusted. If not provided, the batch name "user:anonymous {date and time of submition}" is given as the name for the batch of commands submitted.
 
-## 2.3 Text area for entering commands
+### 3.3 Text area for entering commands
 
 This is the field in which the user creates, adds, changes and deletes items and its values using the command formats explained above.
 
-## 2.4 Error message
+### 3.4 Error message
 
 The new batch page displays errors that prevents the execute button from running successfully. The error us displayed in a position between the heading "New batch" and the form, it only displays if there is an error.

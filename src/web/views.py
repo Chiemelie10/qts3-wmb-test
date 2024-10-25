@@ -20,7 +20,7 @@ def home(request):
     """
     Main page for this tool
     """
-    return render(request, "index.html", {"is_qts_home_page": True})
+    return render(request, "index.html")
 
 
 @require_http_methods(

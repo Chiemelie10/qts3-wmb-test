@@ -28,9 +28,9 @@
   </style>
 </head>
 
-<body>
+<body class="{% block home_page_class_name %}{% endblock %}">
   <main class="container">
-    <nav class="{% if is_qts_home_page %}home-page{% endif %}">
+    <nav>
       <ul>
         <li><a href="{% url 'home' %}"><strong>QuickStatements 3.0</strong></a></li>
         <li><a href="{% url 'new_batch' %}">New batch</a></li>
